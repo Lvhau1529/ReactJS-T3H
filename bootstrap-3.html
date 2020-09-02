@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fontawesone.css" />
+    <style>
+        body {
+            padding-top: 56px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Start bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <i class="fas fa-home"></i> Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <i class="fas fa-address-card"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>&nbsp; TrieuNT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><i class="fas fa-cogs"></i>&nbsp;&nbsp;Setting</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-id-badge">&nbsp;&nbsp;</i>Profile</a>
+                            <div class="dropdown-divider"></div>
+
+                            <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal"
+                                data-target="#loginModal"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Login</a>
+
+                            <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal"
+                                data-target="#logoutModal"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="row">
+                <!-- Column Left -->
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                    <h1 class="mt-4">Post title</h1>
+                    <p class="big">by Start <a href="#">Bootstrap</a></p>
+                    <hr>
+                    <p>Posted on January 1, 2019 at 12:00 PM</p>
+                    <hr>
+                    <img src="http://placehold.it/900x300" alt="" class="img-fluid">
+                    <hr>
+                    <div class="content-post">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut,
+                            error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni
+                            recusandae laborum minus inventore?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque
+                            laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta
+                            earum fugiat. Temporibus, voluptatibus.
+                        </p>
+                    </div>
+                    <hr>
+                    <!-- Comment -->
+                    <div class="card mt-2">
+                        <h5 class="card-header">Leave a Comment:</h5>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <button class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ./Comment -->
+                    <!-- Show Comment -->
+                    <div class="media my-4">
+                        <img src="http://placehold.it/64x64" class="mr-3 rounded-circle" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                            <div class="media mt-3">
+                                <a class="mr-3" href="#">
+                                    <img src="http://placehold.it/64x64" class="mr-3 rounded-circle" alt="...">
+                                </a>
+                                <div class="media-body">
+                                    <h5 class="mt-0">Media heading</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                    Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
+                                    faucibus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Comment -->
+                </div>
+                <!-- ./Column Left -->
+                <!-- Column Right -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card mt-4">
+                        <h5 class="card-header">Search</h5>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="search for...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary">Go!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <h5 class="card-header">Categories</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">HTML</a></li>
+                                        <li><a href="#">CSS</a></li>
+                                        <li><a href="#">Javascript</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Nodejs</a></li>
+                                        <li><a href="#">Java</a></li>
+                                        <li><a href="#">PHP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <h5 class="card-header">Side Widget</h5>
+                        <div class="card-body">
+                            <p>You can put anything you want inside of these side widgets. They are easy to use, and
+                                feature the new Bootstrap 4 card containers!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center text-white"">Copyright © Your Website 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- modal Logout -->
+  <div class=" modal fade" id="logoutModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="loginModalLabel">Logout user</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h4>Are you sure ??? </h4>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Login -->
+                <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="loginModalLabel">Login user</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                            with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary"> <i
+                                            class="fas fa-sign-in-alt"></i>&nbsp;&nbsp; Login</button>
+                                </form>
+                            </div>
+                            <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+                        </div>
+                    </div>
+                </div>
+                <script src="js/jquery-3.5.1.js"></script>
+                <script src="js/popper.js"></script>
+                <script src="js/bootstrap.js"></script>
+                <script>
+                    $(function () {
+                        $('[data-toggle="tooltip"]').tooltip()
+                    });
+                </script>
+</body>
+
+</html>

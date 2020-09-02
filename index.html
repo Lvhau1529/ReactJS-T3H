@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--Định nghĩa các thành phần quan trọng của website-->
+    <meta charset="UTF-8"> <!--Hỗ trợ định dạng ký tự trên Browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Hỗ trợ Reponsive--> 
+    <meta name="author" content="Lê Văn Hậu"> <!--Tác giả website-->
+    <meta name="keyword" content="Quần áo, giày dép"> <!--Keyword của website-->
+    <meta name="description" content="Shop quần áo thời trang"> <!--Chủ đề website hỗ trợ cho SEO-->
+    <link rel="icon" href="img/favicon.png" type="image/img" sizes="60"> <!--Hiển thị favicon-->
+    <link rel="stylesheet" href="css/test.css" type="text/css"> <!--Link đến file css-->
+    <title>ReactJS_2008</title>
+</head>
+    <!--HTML văn bản, tiêu đề và định dạnh văn bản tiêu đề từ h1 đến h6-->
+    <h1>Đây là tiêu đề</h1>
+    <h6>Đây là tiêu đề</h6>
+    <!--Thẻ văn bản-->
+    <p>Đây là văn bản</p> 
+    <!--Các thẻ định dạng văn bản. Không được lạm dụng và hỗ trợ cho SEO web--> 
+    <p><i>Đây là văn bản</i></p>
+    <p><b>Đây là văn bản</b></p>
+    <p><em>Đây là văn bản</em></p>
+    <p><strong>Đây là văn bản</strong></p>
+    <p>Việt Nam có nhiều ca mắc <mark>COVID-19</mark></p>
+    <p>H<sub>2</sub>+O<sub>2</sub></p>
+    <p>Giảm giá: <del>900</del></p>
+    <!--Thuộc tính class và id dùng để định dạng cách gọi cho phần tử -->
+    <p class="" id=""></p>
+    <!--Thuộc tính id là duy nhất chỉ không bao giờ được phép trùng nhau-->
+    <p id="title">Id là title</p>
+    <!--Class có thể được tái sử dụng nhiều lần-->
+    <p class="" ></p>
+
+    <!--HTMl về danh sách-->
+    <h2>HTML về danh sách</h2>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <ol>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ol>
+    <dl>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </dl>
+
+    <!--HTML về liên kết-->
+    <h2>HTML về liên kết</h2>
+    <!--title để giải thích cho đường link. Vd như người dùng nhìn thấy link "Go to facebook" nhưng không biết nó để làm gì, có thể dùng một đoạn title để miêu tả-->
+    <!--target chỉ định cách mở đường link-->
+    <a href="https://facebook.com" title="Facebook" target="_blank">Go to facebook</a>
+    <br></br>
+    <a href="home.html" title="Home" target="_blank">Go to Home page</a>
+    <br></br>
+    <!--Neo link & Anchor link. Đi đến thẻ có id title-->
+    <a href="#title">Go to tag H1</a>
+    <!--Vô hiệu hóa thuộc tính href của thẻ a-->
+    <a href="javascript:void(0);" title="Go to tag H2" >Không đi đâu cả</a>
+
+    <!--HTML làm việc bảng biểu, dữ liệu-->
+    <h2>HTML làm việc bảng biểu, dữ liệu</h2>
+    <table width="100%" cellspacing="0" cellpadding="0" border="1">
+        <thead>
+            <tr>
+                <td>MSV</td>
+                <td>Họ tên</td>
+                <td>Quê quán</td>
+                <td>Giới tính</td>
+                <td>Sđt</td>
+                <td>Ngày sinh</td>
+                <td>Học bổng</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>621089</td>
+                <td>Lê Văn Hậu</td>
+                <td rowspan="2">Hà Nam</td>
+                <td>Nam</td>
+                <td>0355806053</td>
+                <td>15/02/1999</td>
+                <td>123</td>
+            </tr>
+
+            <tr>
+                <td>621089</td>
+                <td>Lê Văn Hậu</td>
+                <td>Nam</td>
+                <td>0355806053</td>
+                <td>15/02/1999</td>
+                <td>123</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Tổng học bổng</td>
+                <td>123</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+
+    <table width="100%" cellspacing="0" cellpadding="0" border="1">
+        <thead>
+            <tr>
+                <th>Thời gian</th>
+                <th colspan="2">Trận đấu</th>
+                <th>Trực tiếp</th>
+                <th>Kênh truyền hình</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="6" align="center">Giao hữu cấp CLB 2020</td>
+            </tr>
+            <tr>
+                <td>31/07 21:00</td>
+                <td>Bayern Munich</td>
+                <td width="2"></td>
+                <td>Olympique Marseille</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>01/08 16:30</td>
+                <td>Western Sydney</td>
+                <td width="2"></td>
+                <td>Wellington Phoenix</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--HTML Media/ multi media-->
+    <h2>HTML media/ multi media</h2>
+    <img src="" alt="sàn giao dịch chứng khoán" title="sàn giao dịch chứng khoán">
+    <br><br/>
+    <audio src="" controls loop width = "500"></audio>
+    <br><br/>
+    <video src="" controls loop></video>
+    <br><br/>
+    <canvas style="width: 500; height: 500; border: 1px solid red;"></canvas>    
+    <!--HTML Youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y_6aSG2yfe8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--HTML Form-->
+    <form action="" method="">
+        <label for="user">Usename</label>
+        <!-- Thuộc tính type quyết định thẻ input làm gì -->
+        <input type="text" id="user"> 
+        <br/><br/>
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass"/>
+        <br/><br/>
+
+        <input type="email" id="email"/>
+        <br/></br>
+
+        <input type="url" name="" id="" placeholder="Vui lòng nhập URL" />
+        <br/></br>
+
+        <input type="color" id="color">
+        <br/></br>
+
+        <label for="date"></label>
+        <input type="date">
+        <select id="birthday">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br/></br>
+
+        <label for="nu">Nữ</label>
+        <input type="radio" name="gender" id="nu">
+        <label for="nam">Nam</label>
+        <input type="radio" name="gender" id="nam">
+        <br/></br>
+
+        <label for="number"></label>
+        <input type="number" id="number" placeholder="Hãy nhập số">
+        <br/></br>
+
+        <label for="content">Content</label>
+        <textarea id="content" cols="30" rows="10"></textarea>
+        <br/><br/>
+
+        <button type="submit">Submit</button>
+    </form>
+    <!--HTML Layouts-->
+    
+</body>
+</html>

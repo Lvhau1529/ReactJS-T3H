@@ -1,0 +1,369 @@
+/* setting basic */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	/* 1rem = 10px */
+}
+body {
+	font-family: "Lato", sans-serif;
+	line-height: 1;
+	font-weight: 400;
+}
+img {
+	display: block;
+	/* width: 100%; */
+}
+a {
+	text-decoration: none;
+}
+button {
+	cursor: pointer;
+}
+input,
+textarea,
+button {
+	box-shadow: none;
+	outline: none;
+	font-family: "Lato", sans-serif;
+}
+:root {
+	--primary-color: #64c29e;
+	--title-color: #353738;
+	--text-color: #848789;
+	--bg-light: #f7f7f7;
+	--bg-dark: #282f35;
+	--border-input: #d3d7d9;
+	--color-text-input: #c8c8c8;
+}
+/* wrapper */
+.warper {
+	max-width: 160rem;
+	margin: 0 auto;
+}
+.header {
+	min-height: 80rem;
+	background-image: url("../img/header.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.nav {
+	margin-top: 3rem;
+}
+.nav__list {
+	display: flex;
+	align-items: center;
+}
+.nav__item {
+	padding-left: 4rem;
+	padding-right: 4rem;
+	position: relative;
+}
+.nav__item:first-child::after,
+.nav__item:nth-child(4)::after {
+	content: ".";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 2rem;
+}
+.nav__link {
+	position: relative;
+	display: block;
+	text-transform: uppercase;
+	color: var(--title-color);
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+/* feature */
+.feature__header {
+	padding: 11rem 1.5rem 14rem;
+	background-color: var(--bg-light);
+	text-align: center;
+}
+.feature__img-top {
+	margin: 0 auto 3rem;
+}
+.feature__heading {
+	font-size: 1.8rem;
+	line-height: 1.6;
+	text-transform: uppercase;
+	color: var(--title-color);
+	font-weight: bold;
+	text-align: center;
+	word-spacing: 0.5rem;
+	letter-spacing: 0.4rem;
+}
+.feature__heading-desc {
+	font-size: 1.8rem;
+	line-height: 1.6;
+	color: var(--text-color);
+	max-width: 108rem;
+	margin: 0 auto;
+	margin-top: 3.4rem;
+}
+/* feature list */
+
+/* feature item */
+.feature__item {
+	display: flex;
+	flex-flow: row wrap;
+	height: 60rem;
+	overflow: hidden;
+}
+.feature__item-img {
+	width: 67%;
+	position: relative;
+}
+.feature__item-img .img__bg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.feature__item-img .img__brand {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+/* feature item content */
+.feature__item-content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 33%;
+}
+
+.feature__item-content-top {
+	padding: 0 4rem;
+	position: relative;
+	background-color: white;
+	height: 67%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.feature__item-content-top .feature__item-text {
+	font-size: 1.5rem;
+	line-height: 1.6;
+	color: var(--text-color);
+	text-align: justify;
+	margin: 3rem auto;
+}
+
+.feature__item-content-bottom {
+	height: 33%;
+}
+
+.feature__item:nth-child(2) .feature__item-img{
+	order: 2 ;
+}
+
+.feature__item:last-child > .feature__item-img {
+	width: 33%;
+}
+
+.feature__item:last-child > .feature__item-content {
+	width: 34%;
+}
+
+/*Tweet*/
+.tweet {
+	padding: 12.5rem 1.5rem 7rem;
+	background-color: var(--bg-light);
+	text-align: center;
+}
+.tweet > .tweet__icon {
+	font-size: 4rem;
+	color: #00aefd;
+	margin-bottom: 3rem;
+}
+.tweet__heading {
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+}
+.tweet__location,
+.tweet__author {
+	color: var(--heading);
+	font-weight: bold;
+}
+.tweet__time {
+	color: var(--text);
+	font-weight: 300;
+	padding-left: 1.5rem;
+	margin-left: 1.5rem;
+	position: relative;
+}
+.tweet__time:before {
+	content: "/";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.tweet__content{
+	font-size: 2.4rem;
+	line-height: 1.4;
+	color: var(--text);
+	font-style: italic;
+	max-width: 104.5rem;
+	margin: 0 auto 10rem;
+}
+.tweet__pagi {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tweet__pagi-item {
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 5rem;
+	border: 1px solid var(--text);
+	margin-left: .5rem;
+	margin-right: .5rem;
+}
+.tweet__pagi-item.is-active {
+	background-color: var(--text);
+}
+
+/* Discover */
+.discover {
+	padding: 7rem 1.5rem;
+	background-color: var(--bg-dark);
+	text-align: center;
+}
+
+.discover__btn {
+	display: inline-block;
+	min-width: 30rem;
+	padding: 2rem;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	color: white;
+	border: 1px solid currentColor;
+	box-shadow: none;
+	outline: none;
+	text-decoration: none;
+	font-weight: bold;
+	transition: .2s linear;
+}
+
+.discover__btn:hover {
+	background-color: var(--primary);
+	border-color: var(--primary);
+}
+
+/* Mail */
+.mail {
+	padding: 10rem 1.5rem;
+	background-color: white;
+	text-align: center;
+}
+
+.mail__logo {
+	margin: 0 auto 3.5rem;
+}
+
+.mail__text {
+	font-size: 2.4rem;
+	font-style: italic;
+	color: var(--text);
+	margin-bottom: 3.5rem;
+	display: inline-block;
+}
+
+.mail__form {
+	display: flex;
+	justify-content: space-between;
+	max-width: 54rem;
+	margin: 0 auto;
+}
+
+.mail__form-inp {
+	border: 1px solid var(--border-input);
+	color: var(--color-text-input);
+	padding: 2.5rem;
+	font-style: italic;
+	font-size: 2rem;
+	width: 74%;
+}
+
+.mail__form-btn {
+	width: 25%;
+	border: 0;
+	outline: none;
+	color: white;
+	background-color: var(--primary-color);
+	text-transform: uppercase;
+	font-size: 2.4rem;
+	font-weight: 300;
+}
+
+/* Footer */
+.footer {
+	padding: 10rem 0 12.5rem;
+	background-color: var(--bg-light);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* Footer location */
+.footer__location {
+	font-size: 1.5rem;
+	line-height: 1.6;
+	color: var(--text-color);
+	display: flex;
+	flex-direction: column;
+	font-style: italic;
+}
+
+.footer__location :first-child {
+	font-weight: bold;
+}
+
+/* Footer icon */
+.footer__icon {
+	font-size: 4rem;
+}
+
+.footer__icon :first-child {
+	color: #00aefd;
+}
+
+.footer__icon :nth-child(2) {
+	color: #537bbd;
+}
+
+.footer__icon :last-child {
+	color: #eb5755;
+}
+
+/* Footer logo */
+.footer__logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.footer__logo-text {
+	font-size: 1.2rem;
+	font-style: italic;
+	padding: 0 1rem 0 0;
+}

@@ -1,0 +1,102 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Khai bao bien */
+:root {
+    --border-color: #d8cc46;
+    --bgDark-color:#323031 ;
+    --hover-color: #292929;
+}
+
+header {
+    width: 100%;
+    background-color: var(--bgDark-color);
+    height: 4.5rem;
+    border-top: 0.3rem solid var(--border-color);
+}
+
+nav {
+    max-width: 98rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav__item {
+    height: 4.2rem;
+    line-height: 4.5rem;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.nav__link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.nav__item:hover {
+    background-color: var(--hover-color);
+}
+
+.nav__item:hover > .nav__link {
+    color: var(--border-color);
+}
+
+/* Dropdown menu */
+.nav__dropdown {
+    display: none;
+    width: 60rem;
+    background-color: var(--bgDark-color);
+    position: absolute;
+    top: 4.2rem;
+    left: 0;
+}
+
+.nav__item:hover .nav__dropdown {
+    display: table;
+}
+
+.nav__dropdown > ul {
+    display: table-row;
+}
+
+.nav__dropdown > ul > li {
+    display: table-cell;
+}
+
+.nav__dropdown .nav__link {
+    font-size: 1.2rem;
+    text-transform: lowercase;
+}
+
+

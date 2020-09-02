@@ -1,0 +1,163 @@
+/* Nhung file css */
+@import 'test-2.css';
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* #title {
+    color: yellow;
+} */
+
+.title-2 {
+    color: red;
+}
+
+h2.title-2 {
+    color: blue
+}
+
+/* Selector attribute */
+/* Trong thuộc tính có chính xác từ ... */
+input[type=text] {
+    border: 2px solid red;
+}
+
+/* Trong thuộc tính có một từ */
+input[class~='input'] {
+    border: 2px solid yellow;
+}
+
+/* Trong thuộc tính có ký tự */
+input[class*='in'] {
+    border: 2px solid pink;
+}
+
+/* Giá trị bắt đầu của thuộc tính */
+a[href^='https'] {
+    color: rgb(10, 238, 97);
+}
+
+/* Giá trị kết thúc của thuộc tính */
+a[href$='vn'] {
+    color: brown;
+}
+
+/* Giá trị bắt đầu có dấu '-' đằng sau */
+a[class|='new'] {
+    color: darkorange;
+}
+
+/* Tìm tất cả các thẻ div có class là content với điều kiện có thẻ box đằng trước */
+/* Thẻ liền kề */
+div.box + div.content {
+    width: 300px;
+    height: 300px;
+    background-color: chartreuse;
+}
+
+/* Thẻ trước sau */
+div.box ~ div.content-2 {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+
+/* div.container div.header > div.logo + div.banner > h5,h4,h3  {
+    color: red;
+} */
+
+/* Pseudo class */
+/* Thành phần đầu tiên */
+div.warper :first-child {
+    color: red;
+}
+
+/* Vị trí đầu của những thành phần khác nhau */
+div.warper :first-of-type {
+    color: yellow;
+}
+
+/* Phần tử cuối cùng */
+div.warper :last-child {
+    color: green;
+}
+
+/* Phần tử cuối cùng của loại */
+div.warper :last-of-type {
+    color: blue;
+}
+
+/* Vị trí thứ 3 từ trên xuống và không quan tâm đến loại */
+div.warper :nth-child(3) {
+    color: pink;
+}
+
+/* Vị trí thứ 3 của những thành phần khác nhau */
+div.warper :nth-of-type(3) {
+    color: blueviolet;
+}
+
+/*  */
+div.warper :nth-last-child(2) {
+    color: orange;
+}
+
+/*  */
+div.warper :nth-last-of-type(2) {
+    color: brown
+}
+
+div.parent :only-child {
+    color: green
+}
+
+/* Lưu ý nếu cách vd Abc :Pseudo sẽ chỉnh sửa các thành phần bên trong
+Viết liền vd Abc:Pseudo chỉnh sửa trực tiếp thẻ.
+*/
+
+div.example input[class|='input-user']:focus {
+    width: 500px;
+    height: 35px;
+    border: 4px solid red;
+}
+
+div.example input[type='checkbox']:checked, div.example input[type='radio']:checked {
+    width: 100px;
+    height: 100px;
+    color: red;
+}
+
+div.example input[type='radio']:checked + p {
+    color: red;
+}
+
+/* Link khi click chuột vào */
+/* Pseudo tag a */
+div.example a:active {
+    color: yellow;
+}
+
+/* Link khi đã click vào */
+div.example a:visited {
+    color: green;
+}
+
+/* Link chưa từng vào */
+div.example a:link {
+    color: red;
+}
+
+/* Link khi di chuột vào */
+div.example a:hover {
+    color: black;
+}
+
+div.example a:hover ~ div.text-box{
+    width: 100px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    top: -300px;
+    left: 300px;
+}

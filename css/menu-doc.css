@@ -1,0 +1,71 @@
+/* Setting Basic */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* CSS variable */
+:root {
+	--primary-color: #78b43d;
+}
+
+/* Nav */
+.nav {
+	width: 20rem;
+	background-color: var(--primary-color);
+}
+
+.nav__item {
+	padding: 1rem 0.5rem;
+	border-bottom: 0.1rem solid white;
+	position: relative;
+}
+
+.nav__item:last-child {
+	border: none;
+}
+
+.nav__link {
+	color: black;
+	display: block;
+}
+
+.nav__item:hover {
+	background-color: #aad862;
+	cursor: pointer;
+}
+
+.nav__item:hover > .nav__link {
+	color: white;
+}
+
+/* Nav-dropdown */
+.nav__dropdown {
+	width: 20rem;
+	background-color: var(--primary-color);
+	position: absolute;
+	left: 20rem;
+	top: 0;
+	display: none;
+}
+
+.nav__item:hover .nav__dropdown {
+	display: block;
+}

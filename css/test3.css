@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Bien trong CSS */
+:root {
+  --primaryColor: rgb(59, 213, 128);
+}
+
+p.title::first-letter {
+  color: red;
+}
+
+p.title::first-line {
+  --primaryColor: rgb(231, 49, 110);
+  color: var(--primaryColor);
+  font-size: 10rem;
+}
+
+p.title::before {
+  content: url(../img/favicon.png);
+}
+
+p.title::after {
+  content: "ReactJS";
+}
+
+p.title::selection {
+  color: white;
+}
+
+.mycolor--apple,
+.mycolor--android {
+  color: var(--primaryColor);
+}
+
+p.text-shadow {
+  font-size: 5rem;
+  text-shadow: 10px 5px 1px black;
+}
+
+div.box {
+  width: 35rem;
+  height: 35rem;
+  /* background-color: blanchedalmond;
+  background-image: url(../img/favicon.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-attachment: scroll; */
+  background: blanchedalmond url(../img/favicon.png) no-repeat center center;
+  border: 0.3rem solid red;
+}

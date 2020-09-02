@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .container {
+    width: 980px;
+    margin: 0 auto;
+  }
+  .header {
+    width: 100%;
+    height: 80px;
+    background-color: pink;
+  }
+  .header__logo {
+    width:30%;
+    height: 80px;
+    float:left;
+    background-color:green;
+  }
+  .header__banner {
+    width:70%;
+    height: 80px;
+    float:left;
+    background-color:violet;
+  }
+  /* css for nav */
+  .nav{
+    width: 100%;
+    height: 40px;
+    background-color:black;
+  }
+  .nav__menu {
+    text-align: center;
+  }
+  .nav__menu li {
+    display: inline-block;
+    line-height:40px;
+    padding: 0px 15px;
+  }
+  .nav__menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  /* css for main */
+  .main {
+    width: 100%;
+    height: 650px;
+    background-color:pink;
+  }
+  .main__left {
+    width: 70%;
+    height: 100%;
+    background-color: gold;
+    float: left;
+  }
+  .main__right {
+    width: 30%;
+    height: 100%;
+    background-color: gray;
+    float: left;
+  }
+  .main__left__section {
+    width: 100%;
+    height: 50%;
+    background-color:pink;
+  }
+  .main__left__article {
+    width: 100%;
+    height: 50%;
+    background-color:blueviolet;
+  }
+  .main__right_aside {
+    width: 100%;
+    height: 100%;
+    background-color:gold;
+  }
+  .footer {
+    width: 100%;
+    height: 200px;
+    background-color:black;
+    padding: 20px 0px;
+  }
+  .footer__title {
+    text-align: center;
+    color: white;
+  }
