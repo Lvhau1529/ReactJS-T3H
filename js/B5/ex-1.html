@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event JS</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+</head>
+
+<body>
+    <button class="btn btn-danger" onclick="clickMe();">Click me!</button>
+    <button class="btn btn-dark" ondblclick="dbClickMe();">Db Click</button>
+    <br/>
+    <input type="text" onfocus="focusInput();" onblur="blurInput();">
+    <br/>
+    <input type="text" onchange="changeText(this);">
+    <br/>
+    <input type="text" onkeydown="myKeyDown(this);" onkeypress="myKeyPress(this)" onkeyup="myKeyUp(this)">
+    <br/>
+    <button onmousedown="myMouseDown()" onmouseup="myMouseUp()">Click me!</button>
+
+    <div style="width: 300px; height: 300px; border: 1px solid red;" onmousemove="myMouseMove();"></div>
+    <div style="width: 300px; height: 300px; border: 1px solid blue;" onmouseover="myMouseOver();" onmouseout="myMouseOut();"></div>
+    
+    <img src="https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-400x460.png" alt="" style="width: 400; height: 460" onmouseover="zoomInImg(this)" onmouseout="zoomOutImg(this)">
+    <br/>
+    <input type="text" onkeydown="keyCodeInput(event);"/>
+    <script type="text/javascript">
+        function keyCodeInput(e) {
+            if(e.keyCode == 32) {
+                console.log('Bạn bấm vào nút cách');
+            }
+        }
+
+        function zoomInImg(obj) {
+            obj.width = 500;
+            obj.heith = 560;
+        }
+
+        function zoomOutImg(obj) {
+            obj.width = 400;
+            obj.heith = 460;
+        }
+
+        function myMouseOut() {
+            console.log('Chuột di chuyển ra thẻ div');
+        }
+
+        function myMouseOver() {
+            console.log('Chuột di chuyển vào thẻ div');
+        }
+        
+        function myMouseMove() {
+            console.log('Bạn đang di chuột');
+        }
+
+        function clickMe() {
+            alert('Bạn vừa click vào tôi!!!')
+        };
+
+        function dbClickMe() {
+            console.log('Ban vừa click vào tôi');
+        };
+
+        function focusInput() {
+            console.log('Hien tuong focus vua xay ra!!!');
+        }
+
+        function blurInput() {
+            console.log('Hien tuong blur vua xay ra!!!');
+        }
+
+        function changeText(obj) {
+            console.log(obj.value);
+        }
+
+        function myKeyDown(obj) {
+            console.log(obj.value + ' tay nhan xuong ban phim');
+        }
+
+        function myKeyPress(obj) {
+            console.log(obj.value + ' tay giu ban phim');
+        }
+
+        function myKeyUp(obj) {
+            console.log(obj.value + ' tay roi ban phim');
+        }
+
+        function myMouseDown() {
+            console.log('Bạn vừa nhấn vào chuột!');
+        }
+
+        function myMouseUp() {
+            console.log('Bạn vừa nhả tay khỏi chuột!');
+        }
+    </script>
+</body>
+
+</html>
